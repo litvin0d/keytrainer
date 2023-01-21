@@ -1,0 +1,30 @@
+@import "./variables";
+
+.root {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0;
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    li {
+        a {
+            color: $sub-font;
+            transition: all 0.25s ease;
+
+            &:hover {
+                color: $font;
+            }
+        }
+    }
+}

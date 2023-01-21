@@ -1,0 +1,30 @@
+@import "./variables";
+
+.root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px 0;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.content {
+    // text-align: justify;
+    font-size: 22px;
+    color: $sub-font;
+}
+
+.author {
+    text-align: right;
+    color: $sub-font;
+}
+
+.loading {
+    text-align: center;
+    font-size: 22px;
+    color: $sub-font;
+}

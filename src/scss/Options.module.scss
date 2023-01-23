@@ -1,0 +1,39 @@
+@import "./variables";
+
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $sub-bg;
+    border-radius: 10px;
+
+    li {
+        color: $sub-font;
+        fill: $sub-font;
+        cursor: pointer;
+        padding: 12px 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .25s ease;
+
+        &:first-child {
+            padding: 12px 8px 12px 18px;
+        }
+
+        &:last-child {
+            padding: 12px 18px 12px 8px;
+        }
+
+        &:hover {
+            color: $font;
+            fill: $font;
+        }
+    }
+
+    .active {
+        color: $font;
+        fill: $font;
+    }
+}
+

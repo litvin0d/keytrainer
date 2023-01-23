@@ -1,9 +1,18 @@
 import { configureStore } from "@reduxjs/toolkit";
+
 import quoteReducer from "./quoteSlice";
+import counterReducer from "./counterSlice";
+import startedReducer from "./startedSlice";
+import failedReducer from "./failedSlice";
+import timeoutReducer from "./timeoutSlice";
 
 export const store = configureStore({
     reducer: {
         quote: quoteReducer,
+        counter: counterReducer,
+        started: startedReducer,
+        failed: failedReducer,
+        timeout: timeoutReducer,
     },
 });
 

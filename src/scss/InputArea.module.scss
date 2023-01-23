@@ -5,8 +5,7 @@
     overflow: hidden;
     width: 100%;
     background: $bg;
-    color: $font;
-    margin: 32px 0;
+    color: $sub-font;
     font-size: 22px;
     border: none;
     transition: all 0.25s ease;
@@ -23,12 +22,32 @@
     &:focus::placeholder {
         opacity: 0;
     }
+
+    &:focus {
+        color: $font;
+    }
 }
 
 .incorrect {
     color: $incorrect;
+
+    &:focus {
+        color: $incorrect;
+    }
 }
 
 .success {
     color: $success;
+
+    &:focus {
+        color: $success;
+    }
+}
+
+.failed {
+    color: $sub-font;
+
+    &:focus {
+        color: $sub-font;
+    }
 }

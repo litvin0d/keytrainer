@@ -37,7 +37,7 @@ export const Quote = () => {
     }, []);
 
     useEffect(() => {
-        quoteResult && dispatch(setQuote(quoteResult.content));
+        quoteResult && dispatch(setQuote(quoteResult.content.slice(0, -1)));
     }, [dispatch, quoteResult]);
 
     if (!quoteResult) {
@@ -52,7 +52,7 @@ export const Quote = () => {
 
     return (
         <div className={s.root}>
-            <p className={s.content}>{quoteResult.content}</p>
+            <p className={s.content}>{quoteResult.content.slice(0, -1)}</p>
             <p className={s.author}>- {quoteResult.author}</p>
         </div>
     );
